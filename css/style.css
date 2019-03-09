@@ -58,13 +58,12 @@ a:hover {
     color: #e99801;
 }
 
-p {
-    max-width:75%;
-    max-height:200px;
-}
-
 ul {
     overflow:hidden;
+}
+
+article {
+    overflow: auto;
 }
 
 /*=================================Classes=================================*/
@@ -91,20 +90,19 @@ ul {
     font-size: 2em;
 }
 
-.introduction {
-    display:block;
-    vertical-align: baseline;
+.content {
+    margin: 5%;
 }
 
-.picture {
-    max-width: 100%;
-    height: auto;
+.introtext {
+    margin-left:35%;
 }
 
 .pp {
     border-radius: 50%;
-    max-width: 15%;
+    max-width: 25%;
     max-height: auto;
+    float: left;
 }
 
 .titles {
@@ -115,6 +113,9 @@ ul {
     color: #01d6e9;
     text-transform: uppercase;
     letter-spacing: 3px;
+}
+
+.centered {
     text-align: center;
 }
 
@@ -171,7 +172,7 @@ ul {
     /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
     display: flex;
     /* NEW, Spec - Firefox, Chrome, Opera */
-    justify-content:center;
+    justify-content:inline-block;
 }
 
 .column {
@@ -184,8 +185,8 @@ ul {
 }
 
 .img-wrapper {
-    width: 60%;
-    height: 60%;
+    width: 25%;
+    height: auto;
 }
 
 
