@@ -19,13 +19,22 @@
     <section>
         <h2 class="centered sub title">Contact me</h2>
         <form class="ajaxForm flex column" action="https://formcarry.com/s/wme2_1R4Ptm" method="POST" accept-charset="UTF-8">
-            <input type="text" name="Their name :" class="mail-field" placeholder="Your name" required/>
-            <input type="email" name="Their adress :" class="mail-field" placeholder="Your e-mail adress" required/>
-            <textarea name="What they want :" class="mail-field" rows="10" cols="20" placeholder="" required></textarea>
+            <div class="credentials">
+                <input class="mail-creds" type="email" name="Their adress :" placeholder="Your e-mail adress" required/>
+                <input class="mail-creds" type="text" name="Their name :" placeholder="Your name" required/>
+            </div>
+            <textarea name="What they want :" class="mail-text" rows="10" cols="20" placeholder="" required></textarea>
             <button name="button" class="button" type="submit">Send</button>
         </form>
     </section>
 
+    <footer class="footer">
+        <div class="flex">
+            <div class="line"></div>
+            <a class="footer-button" href="./resources/CV.pdf" download="CV_loic_gugumus">download my resume</a>
+            <div class="line"></div>
+        </div>
+    </footer>
 </body>
 
 </html>

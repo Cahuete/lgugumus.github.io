@@ -38,15 +38,29 @@ body {
 }
 
 .footer {
-    position: absolute;
-    bottom: 0px;
+    position: fixed;
+    bottom: 0;
     text-align: center;
     width: 100%;
-    margin-bottom: 3%;
+    height: 9%;
+    background-color: floralwhite;
+    box-shadow: 0px -2px 5px #01d6e9;
 }
 
 .footer-sub {
-    font-size: 3em;
+    font-size: 2vw;
+}
+
+.footer-button {
+    border: 5px solid #01d6e9;
+    border-radius: 20px;
+    color: #01d6e9;
+    font-size: 1vw;
+    font-family:eigerdalsheavy;
+    margin-top: 5px;
+    padding: 10px 10px;
+    background-color: transparent;
+    white-space: nowrap;
 }
 
 a {
@@ -56,6 +70,10 @@ a {
 
 a:hover {
     color: #e99801;
+}
+
+p {
+    font-size: 1.5vw;
 }
 
 ul {
@@ -71,7 +89,7 @@ article {
 .nav{
     list-style:none;
     text-align:center;
-    font-size:2em;
+    font-size:3vw;
 }
 
 .nav li{
@@ -81,15 +99,11 @@ article {
 
 .nav a{
     display:inline-block;
-    padding:10px;
-}
-
-.main {
-    font-size: 5em;
+    padding:1vw;
 }
 
 .sub {
-    font-size: 2em;
+    font-size: 2vw;
 }
 
 .content {
@@ -97,17 +111,21 @@ article {
 }
 
 .introtext {
-    margin-left:35%;
+    margin-left: 35%;
+}
+
+.articletext {
+    margin-left: 25%;
 }
 
 .picture {
+    max-width: 25%;
+    max-height: auto;
     float: left;
 }
 
 .profile {
     border-radius: 50%;
-    max-width: 25%;
-    max-height: auto;
 }
 
 .titles {
@@ -129,7 +147,7 @@ article {
     border-radius: 20px;
     color: #01d6e9;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5vw;
     font-family:eigerdalsheavy;
     margin-top: 12px;
     padding: 12px 30px;
@@ -144,21 +162,35 @@ article {
 
 .line {
     border-top: 8px dashed #01d6e9;
-    width: 100%;
+    width: 45%;
     margin-left: 1%;
     margin-right: 1%;
-    margin-top: 30px;
+    margin-top: 1.5vw;
 }
 
-.mail-field {
-    width: 90%;
-    max-width: 900px;
+
+.ajaxForm {
+    font-family: eigerdalsheavy;
+}
+.mail-text {
+    width: 50%;
+    max-width: 750px;
     margin: 1%;
-    line-height: 2em;
+    line-height: 2vw;
     padding: 6px;
-    font-size: 1em;
+    font-size: 1vw;
     border: 5px solid #01d6e9;
     border-radius: 10px;
+}
+.mail-creds {
+    line-height: 2vw;
+    padding: 6px;
+    font-size: 1vw;
+    border: 5px solid #01d6e9;
+    border-radius: 10px;
+}
+.credentials {
+    display: inline;
 }
 
 .project {
@@ -174,9 +206,6 @@ article {
     color: #e99801;
     cursor: pointer;
 }
-
-#first {}
-
 
 /*=================================Layout=================================*/
 
