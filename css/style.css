@@ -73,10 +73,12 @@ article {
     text-align:center;
     font-size:2em;
 }
+
 .nav li{
     display:inline;
     text-align:center;
 }
+
 .nav a{
     display:inline-block;
     padding:10px;
@@ -98,11 +100,14 @@ article {
     margin-left:35%;
 }
 
-.pp {
+.picture {
+    float: left;
+}
+
+.profile {
     border-radius: 50%;
     max-width: 25%;
     max-height: auto;
-    float: left;
 }
 
 .titles {
@@ -156,7 +161,19 @@ article {
     border-radius: 10px;
 }
 
-.project {}
+.project {
+    margin-right: 5%;
+    margin-left: 5%;
+    margin-top: 2%;
+    border: 5px solid #01d6e9;
+    border-radius: 10px;
+}
+
+.project:hover {
+    border: 5px solid #e99801;
+    color: #e99801;
+    cursor: pointer;
+}
 
 #first {}
 
