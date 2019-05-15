@@ -43,7 +43,7 @@ body {
     text-align: center;
     width: 100%;
     height: 9%;
-    margin-bottom: 3%;
+    margin-bottom: 2%;
 }
 
 .footer-sub {
@@ -60,6 +60,10 @@ body {
     padding: 10px 10px;
     background-color: floralwhite;
     white-space: nowrap;
+}
+.footer-button:hover {
+    border: 0.5vw solid #e99801;
+    color: #e99801;
 }
 
 .parallax { 
@@ -219,11 +223,28 @@ li {
     background-color: transparent;
 }
 
+.submit {
+    border: 0.5vw solid #01d6e9;
+    border-radius: 20px;
+    color: #01d6e9;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: eigerdalsheavy;
+    padding: 1vw 2vw;
+    background-color: transparent;
+}
+
 .button:hover {
     border: 0.5vw solid #e99801;
     color: #e99801;
     cursor: pointer;
 }
+.submit:hover {
+    border: 0.5vw solid #e99801;
+    color: #e99801;
+    cursor: pointer;
+}
+
 
 .button-center {
     display: inline-block;
