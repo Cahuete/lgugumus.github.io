@@ -375,15 +375,15 @@ li {
         font-size: 1.5vh;
     }
     .button {
-        font-size: 2vh;
+        font-size: 3vh;
         padding: 3vw 5vw;
     }
     .footer {
         bottom: 5vh;
     }
     .footer-button {
-        font-size: 1.5vh;
-        padding: 1.5vw 2vw;
+        font-size: 2vh;
+        padding: 2vw 3vw;
     }
 }
 
