@@ -69,7 +69,7 @@ body {
 
 .parallax { 
     background-image: url("../images/PP.jpg");
-    height: 33%; 
+    height: 33%;
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -276,6 +276,7 @@ li {
 }
 
 .mail-creds {
+    margin-top: 2vh;
     line-height: 2vw;
     padding: 6px;
     font-size: 1vw;
@@ -328,7 +329,7 @@ li {
 
 /*=================================Media Queries=================================*/
 
-@media (max-width:630px){
+@media (max-width:767px){
     .header {
         font-size: 2.5vh;
         height: 5vh;
@@ -345,6 +346,7 @@ li {
     .parallax {
         height: 25vh;
         background-position: -25vw -20vh;
+        background-attachment: fixed;
     }
     
     .sub {
@@ -385,70 +387,32 @@ li {
         font-size: 2vh;
         padding: 2vw 3vw;
     }
-}
-
-@media (min-width:630px) and (max-width:767px) {
-    .header {
-        font-size: 3vh;
-        height: 6vh;
-    }
-    .nav {
+    .mail-text {
+        width: 85vw;
+        max-width: 90vw;
+        height: 55vh;
+        max-height: 60vh;
         margin: 2vh;
+        line-height: 2vh;
+        padding: 1vw;
+        font-size: 1.5vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
     }
-    .nav a {
-        padding-top: 0vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
-    }
-
-    .parallax {
-        height: 20vh;
-        background-position: 15% -25vh;
-    }
-    
-    .sub {
-        font-size: 5vw;
-    }
-    .content {
-        font-size: 4vw;
-        margin-bottom: 20vh;
-    }
-    .line {
-        border-top: 1vw solid #01d6e9;
-        width: 25vw;
-        margin-top: 12vh;
-        margin-left: -25vw;
-        margin-right: -25vw;
-    }
-    .SectionHeader {
-        width: 100%;
-        font-size: 5vw;
-    }
-    strong {
-        font-size: 4vw;
-    }
-    .wutIdo {
-        margin-left: 5.5vw;
-    }
-    .columnListing {
-        padding-left: 3vw;
-        font-size: 3vw;
-    }
-    .button {
-        font-size: 3vw;
-        padding: 2vw 3vw;
-        border-radius: 5vw;
-    }
-    .footer {
-        bottom: 5vh;
-    }
-    .footer-button {
+    .mail-creds {
+        line-height: 1vh;
+        padding: 1vw;
         font-size: 2.5vw;
-        padding: 1.5vw 2vw;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    .submit {
+        border: 1vw solid #01d6e9;
         border-radius: 5vw;
+        font-size: 3vh;
+        padding: 1vw 3vw;
     }
 }
-
 @media (min-width:767px) and (max-width:1080px) {
     .header {
         font-size: 3vh;
@@ -466,6 +430,7 @@ li {
     .parallax {
         height: 20vh;
         background-position: 15% -25vh;
+        background-attachment: fixed;
     }
     
     .sub {
@@ -509,6 +474,31 @@ li {
         padding: 1.5vw 2vw;
         border-radius: 5vw;
     }
+    .mail-text {
+        width: 85vw;
+        max-width: 90vw;
+        height: 55vh;
+        max-height: 60vh;
+        margin: 2vh;
+        line-height: 2vh;
+        padding: 1vw;
+        font-size: 2vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    .mail-creds {
+        line-height: 1vh;
+        padding: 1vw;
+        font-size: 2vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    .submit {
+        border: 0.5vw solid #01d6e9;
+        border-radius: 5vw;
+        font-size: 3vh;
+        padding: 1vw 3vw;
+    }
 }
 
 @media (min-width:1080px) {
@@ -528,6 +518,7 @@ li {
     .parallax {
         height: 40vh;
         background-position: 15% -55vh;
+        background-attachment: fixed;
     }
     
     .sub {
@@ -567,5 +558,30 @@ li {
         font-size: 2vh;
         padding: 1vw 2vw;
         border-radius: 5vw;
+    }
+    .mail-text {
+        width: 70vw;
+        max-width: 75vw;
+        height: 50vh;
+        max-height: 55vh;
+        margin: 2vh;
+        line-height: 2vh;
+        padding: 1vw;
+        font-size: 1.5vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    .mail-creds {
+        line-height: 1vh;
+        padding: 1vh;
+        font-size: 2vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    .submit {
+        border: 0.5vw solid #01d6e9;
+        border-radius: 5vw;
+        font-size: 3vh;
+        padding: 0.5vw 1vw;
     }
 }
