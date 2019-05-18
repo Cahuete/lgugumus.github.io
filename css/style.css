@@ -152,10 +152,6 @@ li {
     text-align: center;
 }
 
-.articletext {
-    margin-left: 25%;
-}
-
 .introPicture {
     background-image: url("../images/PP.jpg");
     background-position: 0vh -19vh;
@@ -295,6 +291,15 @@ li {
     border: 5px solid #e99801;
     color: #e99801;
     cursor: pointer;
+}
+
+.articletext {
+    margin-left: 25%;
+    font-size: 3vh;
+}
+
+.picture {
+    float: left;
 }
 
 /*=================================Layout=================================*/
