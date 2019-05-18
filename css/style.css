@@ -67,14 +67,6 @@ body {
     color: #e99801;
 }
 
-.parallax { 
-    background-image: url("../images/PP.jpg");
-    height: 33%;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 a {
     color: #01d6e9;
     text-decoration: none;
@@ -164,10 +156,13 @@ li {
     margin-left: 25%;
 }
 
-.picture {
-    max-width: 25%;
-    max-height: auto;
-    float: left;
+.introPicture {
+    background-image: url("../images/PP.jpg");
+    background-position: 0vh -19vh;
+    background-size: 150%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25vh;
 }
 
 .profile {
@@ -329,7 +324,7 @@ li {
 
 /*=================================Media Queries=================================*/
 
-@media (max-width:767px){
+@media (max-width:681px){
     .header {
         font-size: 2.5vh;
         height: 5vh;
@@ -341,12 +336,6 @@ li {
         padding-top: 0.5vh;
         padding-left: 5vw;
         padding-right: 5vw;
-    }
-
-    .parallax {
-        height: 25vh;
-        background-position: -25vw -20vh;
-        background-attachment: fixed;
     }
     
     .sub {
@@ -390,19 +379,19 @@ li {
     .mail-text {
         width: 85vw;
         max-width: 90vw;
-        height: 55vh;
+        height: 50vh;
         max-height: 60vh;
         margin: 2vh;
         line-height: 2vh;
         padding: 1vw;
-        font-size: 1.5vh;
+        font-size: 2vh;
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
     .mail-creds {
         line-height: 1vh;
         padding: 1vw;
-        font-size: 2.5vw;
+        font-size: 1.5vh;
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
@@ -413,9 +402,9 @@ li {
         padding: 1vw 3vw;
     }
 }
-@media (min-width:767px) and (max-width:1080px) {
+@media (min-width:681px) and (max-width:1080px) {
     .header {
-        font-size: 3vh;
+        font-size: 4vh;
         height: 6vh;
     }
     .nav {
@@ -423,14 +412,15 @@ li {
     }
     .nav a {
         padding-top: 0vh;
-        padding-left: 8vw;
-        padding-right: 8vw;
+        padding-left: 10vw;
+        padding-right: 10vw;
     }
 
-    .parallax {
-        height: 20vh;
-        background-position: 15% -25vh;
-        background-attachment: fixed;
+    .introPicture {
+        height: 35vh;
+        background-position: 0vw -80vh;
+        background-attachment: initial;
+        background-size: initial;
     }
     
     .sub {
@@ -438,39 +428,39 @@ li {
     }
     .content {
         font-size: 4vw;
-        margin-bottom: 20vh;
+        margin-bottom: 35vh;
     }
     .line {
         border-top: 1vw solid #01d6e9;
         width: 20vw;
-        margin-top: 8.5vh;
+        margin-top: 21vh;
         margin-left: -25vw;
         margin-right: -25vw;
     }
     .SectionHeader {
         width: 100%;
-        font-size: 4vh;
+        font-size: 10vh;
     }
     strong {
-        font-size: 3vh;
+        font-size: 5vh;
     }
     .wutIdo {
-        margin-left: 3vw;
+        margin-left: 7vw;
     }
     .columnListing {
         padding-left: 3vw;
-        font-size: 2vh;
+        font-size: 4vh;
     }
     .button {
-        font-size: 3vh;
+        font-size: 4vh;
         padding: 2vw 3vw;
         border-radius: 5vw;
     }
     .footer {
-        bottom: 5vh;
+        bottom: 13vh;
     }
     .footer-button {
-        font-size: 2.5vw;
+        font-size: 1.5vw;
         padding: 1.5vw 2vw;
         border-radius: 5vw;
     }
@@ -503,22 +493,22 @@ li {
 
 @media (min-width:1080px) {
     .header {
-        font-size: 3vh;
-        height: 6vh;
+        font-size: 4vh;
+        height: 7vh;
     }
     .nav {
-        margin: 2vh;
+        margin: 1vh;
     }
     .nav a {
         padding-top: 0vh;
-        padding-left: 10vw;
-        padding-right: 10vw;
+        padding-left: 12vw;
+        padding-right: 12vw;
     }
 
-    .parallax {
-        height: 40vh;
-        background-position: 15% -55vh;
-        background-attachment: fixed;
+    .introPicture {
+        height: 35vh;
+        background-position: 0vw -70vh;
+        background-size: 100vw;
     }
     
     .sub {
