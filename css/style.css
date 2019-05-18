@@ -62,6 +62,7 @@ body {
     background-color: floralwhite;
     white-space: nowrap;
 }
+
 .footer-button:hover {
     border: 0.5vw solid #e99801;
     color: #e99801;
@@ -91,6 +92,7 @@ ul {
     margin-block-start: 1em;
     margin-block-end: 1em;
 }
+
 ul.skills {
     padding-inline-start: 15%;
 }
@@ -104,7 +106,7 @@ li {
 }
 
 /*=================================Classes=================================*/
-.wutIdo{
+.wutIdo {
     margin-left: 14%;
 }
 
@@ -224,6 +226,7 @@ li {
     color: #e99801;
     cursor: pointer;
 }
+
 .submit:hover {
     border: 0.5vw solid #e99801;
     color: #e99801;
@@ -243,9 +246,11 @@ li {
     margin-right: 5%;
     position: absolute;
 }
+
 .left {
     right: 100%;
 }
+
 .right {
     left: 100%;
 }
@@ -329,27 +334,37 @@ li {
 
 /*=================================Media Queries=================================*/
 
-@media (max-width:681px){
+@media (max-width:681px) {
     .header {
         font-size: 2.5vh;
         height: 5vh;
     }
+
     .nav {
         margin: 0.7vh;
     }
+
     .nav a {
         padding-top: 0.5vh;
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    
+
+    .introPicture {
+        height: 50vw;
+        background-position: -15vw -20vh;
+        background-size: 175vw;
+    }
+
     .sub {
         font-size: 3vh;
     }
+
     .content {
         font-size: 2vh;
         margin-bottom: 20vh;
     }
+
     .line {
         border-top: 1.5vw solid #01d6e9;
         width: 20vw;
@@ -357,30 +372,38 @@ li {
         margin-left: -20vw;
         margin-right: -20vw;
     }
+
     .SectionHeader {
         font-size: 3vh;
     }
+
     strong {
         font-size: 2vh;
     }
+
     .wutIdo {
         margin-left: 4vw;
     }
+
     .columnListing {
         padding-left: 2vw;
         font-size: 1.5vh;
     }
+
     .button {
         font-size: 3vh;
         padding: 3vw 5vw;
     }
+
     .footer {
         bottom: 5vh;
     }
+
     .footer-button {
         font-size: 2vh;
         padding: 2vw 3vw;
     }
+
     .mail-text {
         width: 85vw;
         max-width: 90vw;
@@ -393,6 +416,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .mail-creds {
         line-height: 1vh;
         padding: 1vw;
@@ -400,6 +424,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .submit {
         border: 1vw solid #01d6e9;
         border-radius: 5vw;
@@ -407,14 +432,17 @@ li {
         padding: 1vw 3vw;
     }
 }
-@media (min-width:681px) and (max-width:1080px) {
+
+@media (min-width:681px) and (max-width:729px) {
     .header {
         font-size: 4vh;
         height: 6vh;
     }
+
     .nav {
         margin: 2vh;
     }
+
     .nav a {
         padding-top: 0vh;
         padding-left: 10vw;
@@ -423,18 +451,19 @@ li {
 
     .introPicture {
         height: 35vh;
-        background-position: 0vw -80vh;
-        background-attachment: initial;
-        background-size: initial;
+        background-position: 0vw -35vh;
+        background-size: cover;
     }
-    
+
     .sub {
         font-size: 5vw;
     }
+
     .content {
         font-size: 4vw;
         margin-bottom: 35vh;
     }
+
     .line {
         border-top: 1vw solid #01d6e9;
         width: 20vw;
@@ -442,33 +471,41 @@ li {
         margin-left: -25vw;
         margin-right: -25vw;
     }
+
     .SectionHeader {
         width: 100%;
         font-size: 10vh;
     }
+
     strong {
         font-size: 5vh;
     }
+
     .wutIdo {
         margin-left: 7vw;
     }
+
     .columnListing {
         padding-left: 3vw;
         font-size: 4vh;
     }
+
     .button {
         font-size: 4vh;
         padding: 2vw 3vw;
         border-radius: 5vw;
     }
+
     .footer {
         bottom: 13vh;
     }
+
     .footer-button {
         font-size: 1.5vw;
         padding: 1.5vw 2vw;
         border-radius: 5vw;
     }
+
     .mail-text {
         width: 85vw;
         max-width: 90vw;
@@ -481,6 +518,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .mail-creds {
         line-height: 1vh;
         padding: 1vw;
@@ -488,6 +526,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .submit {
         border: 0.5vw solid #01d6e9;
         border-radius: 5vw;
@@ -496,14 +535,149 @@ li {
     }
 }
 
+@media (min-width:729px) and (max-width:1080px) {
+    .header {
+        font-size: 4vw;
+        height: 6vh;
+    }
+
+    .nav {
+        margin: 2vh;
+    }
+
+    .nav a {
+        padding-top: 0vh;
+        padding-left: 8vw;
+        padding-right: 8vw;
+    }
+
+    .introPicture {
+        height: 30vh;
+        background-position: -10vw -30vh;
+        background-size: 150vw;
+    }
+
+    .sub {
+        font-size: 5vw;
+    }
+
+    .content {
+        font-size: 4vw;
+        margin-bottom: 20vh;
+    }
+
+    .line {
+        border-top: 1vw solid #01d6e9;
+        width: 20vw;
+        margin-top: 8.5vh;
+        margin-left: -25vw;
+        margin-right: -25vw;
+    }
+
+    .SectionHeader {
+        width: 100%;
+        font-size: 5vw;
+    }
+
+    strong {
+        font-size: 3vw;
+    }
+
+    .wutIdo {
+        margin-left: 7vw;
+    }
+
+    .columnListing {
+        padding-left: 3vw;
+        font-size: 2vw;
+    }
+
+    .button {
+        font-size: 2vw;
+        padding: 2vw 3vw;
+        border-radius: 5vw;
+    }
+
+    .footer {
+        bottom: 1vh;
+    }
+
+    .footer-button {
+        font-size: 1.5vw;
+        padding: 1.5vw 2vw;
+        border-radius: 5vw;
+    }
+
+    .mail-text {
+        width: 85vw;
+        max-width: 90vw;
+        height: 55vh;
+        max-height: 60vh;
+        margin: 2vh;
+        line-height: 2vh;
+        padding: 1vw;
+        font-size: 2vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+
+    .mail-creds {
+        line-height: 1vh;
+        padding: 1vw;
+        font-size: 2vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+
+    .submit {
+        border: 0.5vw solid #01d6e9;
+        border-radius: 5vw;
+        font-size: 3vh;
+        padding: 1vw 3vw;
+    }
+}
+
+@media (min-width:729px) and (max-height:500px) {
+    .header {
+        font-size: 5vh;
+        height: 8vh;
+    }
+
+    .nav {
+        margin: 2vh;
+    }
+
+    .nav a {
+        padding-top: 0vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+    }
+
+    .introPicture {
+        height: 35vh;
+        background-position: 0vw -60vh;
+        background-size: cover;
+    }
+
+    .line {
+        border-top: 1vw solid #01d6e9;
+        width: 20vw;
+        margin-top: 21vh;
+        margin-left: -25vw;
+        margin-right: -25vw;
+    }
+}
+
 @media (min-width:1080px) {
     .header {
         font-size: 4vh;
         height: 7vh;
     }
+
     .nav {
         margin: 1vh;
     }
+
     .nav a {
         padding-top: 0vh;
         padding-left: 12vw;
@@ -513,16 +687,18 @@ li {
     .introPicture {
         height: 35vh;
         background-position: 0vw -70vh;
-        background-size: 100vw;
+        background-size: cover;
     }
-    
+
     .sub {
         font-size: 7vh;
     }
+
     .content {
         font-size: 5vh;
         margin-bottom: 40vh;
     }
+
     .line {
         border-top: 0.5vw solid #01d6e9;
         width: 20vw;
@@ -530,30 +706,37 @@ li {
         margin-left: -25vw;
         margin-right: -25vw;
     }
+
     .SectionHeader {
         width: 100%;
         font-size: 8vh;
     }
+
     strong {
         font-size: 5vh;
     }
+
     .wutIdo {
         margin-left: 6.5vw;
     }
+
     .columnListing {
         padding-left: 4vw;
         font-size: 3vh;
     }
+
     .button {
         font-size: 4vh;
         padding: 1vw 2vw;
         border-radius: 5vw;
     }
+
     .footer-button {
         font-size: 2vh;
         padding: 1vw 2vw;
         border-radius: 5vw;
     }
+
     .mail-text {
         width: 70vw;
         max-width: 75vw;
@@ -566,6 +749,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .mail-creds {
         line-height: 1vh;
         padding: 1vh;
@@ -573,6 +757,7 @@ li {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+
     .submit {
         border: 0.5vw solid #01d6e9;
         border-radius: 5vw;
