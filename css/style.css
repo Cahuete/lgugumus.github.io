@@ -33,11 +33,6 @@ body {
     color: #01d6e9;
 }
 
-.header {
-    border-bottom: solid 5px #01d6e9;
-    height: 15%
-}
-
 .footer {
     position: fixed;
     bottom: 0;
@@ -68,6 +63,13 @@ body {
     color: #e99801;
 }
 
+.header {
+    border-bottom: solid 5px #01d6e9;
+    height: 15%
+}
+
+/*Balises*/
+
 a {
     color: #01d6e9;
     text-decoration: none;
@@ -85,6 +87,14 @@ div {
     display: block;
 }
 
+li {
+    display: list-item;
+}
+
+strong {
+    font-size: 3vw;
+}
+
 ul {
     overflow: hidden;
     display: block;
@@ -97,45 +107,62 @@ ul.skills {
     padding-inline-start: 15%;
 }
 
-strong {
-    font-size: 3vw;
-}
-
-li {
-    display: list-item;
-}
-
 /*=================================Classes=================================*/
-.wutIdo {
-    margin-left: 14%;
+
+.ajaxForm {
+    font-family: eigerdalsheavy;
+}
+
+.articletext {
+    font-size: 3vh;
+    border: 5px solid #01d6e9;
+    border-radius: 1vw;
+}
+
+.button {
+    border: 0.5vw solid #01d6e9;
+    border-radius: 20px;
+    color: #01d6e9;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: eigerdalsheavy;
+    margin-top: 5vw;
+    padding: 1vw 2vw;
+    background-color: transparent;
+}
+
+.button-center {
+    display: inline-block;
+}
+
+.button:hover {
+    border: 0.5vw solid #e99801;
+    color: #e99801;
+    cursor: pointer;
+}
+
+.centered {
+    text-align: center;
+    margin-top: 15%;
+    margin-bottom: 5%;
+    margin-left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    position: relative;
+}
+
+.centeredTitle {
+    text-align: center;
+}
+
+.credentials {
+    display: inline;
 }
 
 .columnListing {
     width: 33.333333%;
     text-align: left;
     font-size: 2vw;
-}
-
-.noHover {
-    pointer-events: none;
-}
-
-.nav {
-    list-style: none;
-    text-align: center;
-}
-
-.nav li {
-    display: inline;
-    text-align: center;
-}
-
-.nav a {
-    display: inline-block;
-}
-
-.sub {
-    font-size: 3vw;
 }
 
 .contact {
@@ -163,81 +190,6 @@ li {
     height: 25vh;
 }
 
-.profile {
-    border-radius: 50%;
-}
-
-.titles {
-    margin-top: 10%;
-}
-
-.SectionHeader {
-    width: 250px;
-    font-weight: bold;
-    font-size: 3vw;
-}
-
-.title {
-    font-weight: bold;
-    color: #01d6e9;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-}
-
-.centered {
-    text-align: center;
-    margin-top: 15%;
-    margin-bottom: 5%;
-    margin-left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    position: relative;
-}
-
-.centeredTitle {
-    text-align: center;
-}
-
-.button {
-    border: 0.5vw solid #01d6e9;
-    border-radius: 20px;
-    color: #01d6e9;
-    display: inline-block;
-    font-size: 2vw;
-    font-family: eigerdalsheavy;
-    margin-top: 5vw;
-    padding: 1vw 2vw;
-    background-color: transparent;
-}
-
-.submit {
-    border: 0.5vw solid #01d6e9;
-    border-radius: 20px;
-    color: #01d6e9;
-    display: inline-block;
-    font-size: 2vw;
-    font-family: eigerdalsheavy;
-    padding: 1vw 2vw;
-    background-color: transparent;
-}
-
-.button:hover {
-    border: 0.5vw solid #e99801;
-    color: #e99801;
-    cursor: pointer;
-}
-
-.submit:hover {
-    border: 0.5vw solid #e99801;
-    color: #e99801;
-    cursor: pointer;
-}
-
-
-.button-center {
-    display: inline-block;
-}
-
 .line {
     border-top: 0.5vw solid #01d6e9;
     width: 30%;
@@ -255,9 +207,13 @@ li {
     left: 100%;
 }
 
-
-.ajaxForm {
-    font-family: eigerdalsheavy;
+.mail-creds {
+    margin-top: 2vh;
+    line-height: 2vw;
+    padding: 6px;
+    font-size: 1vw;
+    border: 5px solid #01d6e9;
+    border-radius: 10px;
 }
 
 .mail-text {
@@ -271,40 +227,267 @@ li {
     border-radius: 10px;
 }
 
-.mail-creds {
-    margin-top: 2vh;
-    line-height: 2vw;
-    padding: 6px;
-    font-size: 1vw;
-    border: 5px solid #01d6e9;
-    border-radius: 10px;
+.nav {
+    list-style: none;
+    text-align: center;
 }
 
-.credentials {
+.nav a {
+    display: inline-block;
+}
+
+.nav li {
     display: inline;
+    text-align: center;
+}
+
+.noHover {
+    pointer-events: none;
+}
+
+.picture {
+    float: left;
+}
+
+.profile {
+    border-radius: 50%;
 }
 
 .project {
+    display: inline-block;
     margin-right: 5%;
     margin-left: 5%;
-    margin-top: 2%;
-    border: 5px solid #01d6e9;
-    border-radius: 1vw;
+    margin-top: 5%;
 }
 
+/*
 .project:hover {
     border: 5px solid #e99801;
     color: #e99801;
     cursor: pointer;
 }
+*/
 
-.articletext {
-    margin-left: 25%;
-    font-size: 3vh;
+.SectionHeader {
+    width: 250px;
+    font-weight: bold;
+    font-size: 3vw;
 }
 
-.picture {
-    float: left;
+#slider {
+    z-index: -10;
+    display: block;
+    width: 15vw;
+    height: 25vw;
+    background-color: gray;
+    overflow: hidden;
+    position: relative;
+    margin: auto;
+    border: 5px solid #01d6e9;
+    border-radius: 1vw;
+}
+
+.sub {
+    font-size: 3vw;
+}
+
+.submit {
+    border: 0.5vw solid #01d6e9;
+    border-radius: 20px;
+    color: #01d6e9;
+    display: inline-block;
+    font-size: 2vw;
+    font-family: eigerdalsheavy;
+    padding: 1vw 2vw;
+    background-color: transparent;
+}
+
+.submit:hover {
+    border: 0.5vw solid #e99801;
+    color: #e99801;
+    cursor: pointer;
+}
+
+.title {
+    font-weight: bold;
+    color: #01d6e9;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.titles {
+    margin-top: 10%;
+}
+
+.wutIdo {
+    margin-left: 14%;
+}
+
+/*Slideshows*/
+
+.slideBounce {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    animation: slides3 9s infinite;
+}
+.slideBounce:nth-child(1) {
+    animation-delay: 0s;
+    background-image: url("../images/Screenshots/BounceMax/01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slideBounce:nth-child(2) {
+    animation-delay: 3s;
+    background-image: url('../images/Screenshots/BounceMax/02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slideBounce:nth-child(3) {
+    animation-delay: 6s;
+    background-image: url('../images/Screenshots/BounceMax/03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slideFill {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: transparent
+    overflow: hidden;
+    animation: slides2 6s infinite;
+}
+.slideFill:nth-child(1) {
+    animation-delay: 0s;
+    background-image: url('../images/Screenshots/FillUp/01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slideFill:nth-child(2) {
+    animation-delay: 3s;
+    background-image: url('../images/Screenshots/FillUp/02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slideShooter {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    animation: slides3 9s infinite;
+}
+.slideShooter:nth-child(1) {
+    animation-delay: 1s;
+    background-image: url("../images/Screenshots/Shooter2D/01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slideShooter:nth-child(2) {
+    animation-delay: 4s;
+    background-image: url('../images/Screenshots/Shooter2D/02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slideShooter:nth-child(3) {
+    animation-delay: 7s;
+    background-image: url('../images/Screenshots/Shooter2D/03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.slideStair {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    overflow: hidden;
+    animation: slides3 9s infinite;
+}
+.slideStair:nth-child(1) {
+    animation-delay: 2s;
+    background-image: url("../images/Screenshots/StairUp/01.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.slideStair:nth-child(2) {
+    animation-delay: 5s;
+    background-image: url('../images/Screenshots/StairUp/02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+.slideStair:nth-child(3) {
+    animation-delay: 8s;
+    background-image: url('../images/Screenshots/StairUp/03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+@keyframes slides2 {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+    5% {
+        left: 0%;
+    }
+    50% {
+        left: 0%;
+    }
+    55.5% {
+        left: -100%;
+        width: 100%;
+    }
+    55.6% {
+        left: -100%;
+        width: 0%;
+    }
+    90% {
+        left: 100%;
+        width: 0%;
+    }
+    100% {
+        left: 100%;
+        width: 100%;
+    }
+}
+@keyframes slides3 {
+    0% {
+        left: 100%;
+        width: 100%;
+    }
+    5% {
+        left: 0%;
+    }
+    33.33333333333% {
+        left: 0%;
+    }
+    38.33333333333% {
+        left: -100%;
+        width: 100%;
+    }
+    38.4% {
+        left: -100%;
+        width: 0%;
+    }
+    90% {
+        left: 100%;
+        width: 0%;
+    }
+    100% {
+        left: 100%;
+        width: 100%;
+    }
 }
 
 /*=================================Layout=================================*/
