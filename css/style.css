@@ -303,19 +303,28 @@ ul.skills {
 }
 
 .ScrollContainer {
-    position: fixed;
-    display: block;
-    left: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    float: right;
     z-index: 1;
 }
+
 .Scroll {
     font: 1vw eigerdalsheavy;
     color: #01d6e9;
-    border: none;
-    background-color: transparent;
+    border: 0.2em solid #01d6e9;
+    border-radius: 20px;
+    background-color: floralwhite;
+    display: block;
+    cursor: pointer;
+    margin: auto;
+    padding: 1vh;
 }
+
 .Scroll:hover {
     color: orange;
+    border-color: orange;
 }
 
 .SectionHeader {

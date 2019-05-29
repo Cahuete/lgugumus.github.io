@@ -1,9 +1,14 @@
-$("#S1").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#Jam").offset().top}, 'slow');
-});
+jQuery(document).ready(function() {
     
-$("#S2").click(function() {
-    $('html,body').animate({
-        scrollTop: $("#Pro").offset().top}, 'slow');
+    jQuery("#S1").click(function() {
+        console.log("Jams");
+        jQuery('html,body').animate({
+            scrollTop: jQuery("#Jam").offset().top}, 'slow');
+    });
+    
+    jQuery("#S2").click(function() {
+        console.log("Pro");
+        jQuery('html,body').animate({
+            scrollTop: jQuery("#Pro").offset().top}, 'slow');
+    });
 });
