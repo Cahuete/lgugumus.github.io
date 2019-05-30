@@ -300,7 +300,6 @@ ul.skills {
 
 #S1 {
     border-bottom: 1px solid #01d6e9;
-    height: 12vw;
 }
 
 .ScrollContainer {
@@ -714,6 +713,7 @@ ul.skills {
     #S1 {
         border-bottom: none;
         border-right: 0.1vh solid #01d6e9;
+        height: 12vw;
     }
     
     .ScrollContainer {
