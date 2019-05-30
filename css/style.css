@@ -13,9 +13,6 @@
     font-style: normal;
 }
 
-
-
-
 @font-face {
     font-family: 'crikey_tallsemibold';
     src: url('../css/fonts/crikey_tall-webfont-webfont.woff2') format('woff2'),
@@ -24,13 +21,25 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'effra_reguliar';
+    src: url('../css/fonts/effra_std_rg-webfont.woff2') format('woff2'),
+        url('../css/fonts/effra_std_rg-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 /*=================================HTML Elements=================================*/
 
 body {
-    font-family: 'eigerdalsheavy';
+    font-family: 'effra_reguliar';
     color: #01d6e9;
     background-image: linear-gradient(white, white 50%, floralwhite);
+}
+
+button:focus {
+    outline: 0;
 }
 
 .footer {
@@ -52,7 +61,7 @@ body {
     color: #01d6e9;
     font-size: 2vw;
     font-family: eigerdalsheavy;
-    margin-top: 5px;
+    margin: 5px auto;
     padding: 10px 10px;
     background-color: floralwhite;
     white-space: nowrap;
@@ -65,7 +74,7 @@ body {
 
 .header {
     background-color: floralwhite;
-    border-bottom: solid 5px #01d6e9;
+    border-bottom: 1vh solid #01d6e9;
     height: 15%
 }
 
@@ -117,7 +126,6 @@ strong {
 ul {
     overflow: hidden;
     display: block;
-    list-style-type: disc;
     margin-block-end: 1em;
 }
 
@@ -126,11 +134,6 @@ ul.skills {
 }
 
 /*=================================Classes=================================*/
-
-.ajaxForm {
-    font-family: eigerdalsheavy;
-}
-
 .articletext {
     max-width: 60%;
     padding-left: 5vh;
@@ -147,11 +150,6 @@ ul.skills {
     font-family: eigerdalsheavy;
     margin-top: 5vw;
     padding: 1vw 2vw;
-    background-color: transparent;
-}
-
-.button-center {
-    display: inline-block;
 }
 
 .button:hover {
@@ -196,8 +194,7 @@ ul.skills {
 }
 
 .gamename {
-    font-size: 6.5vh;
-
+    font: 6.5vh eigerdalsheavy;
 }
 
 .infos {
@@ -257,6 +254,7 @@ ul.skills {
 }
 
 .nav {
+    font-family: eigerdalsheavy;
     background-color: floralwhite;
     list-style: none;
     text-align: center;
@@ -297,9 +295,11 @@ ul.skills {
     padding-left: 15vw;
     padding-right: 15vw;
     padding-bottom: 10vh;
-    background-image: linear-gradient(white, white 50%, floralwhite);
-    border-top: 10vh solid white;
-    border-bottom: 1vh solid #01d6e9;
+    padding-top: 10vh;
+}
+
+#S1 {
+    border-bottom: 1px solid #01d6e9;
 }
 
 .ScrollContainer {
@@ -308,14 +308,18 @@ ul.skills {
     top: 0;
     float: right;
     z-index: 1;
+    border: 0.2em solid #01d6e9;
+    border-right: none;
+    border-top: none;
+    border-bottom-left-radius: 20px;
+    background-color: floralwhite;
 }
 
 .Scroll {
     font: 1vw eigerdalsheavy;
+    border: none;
+    background-color: transparent;
     color: #01d6e9;
-    border: 0.2em solid #01d6e9;
-    border-radius: 20px;
-    background-color: floralwhite;
     display: block;
     cursor: pointer;
     margin: auto;
@@ -332,8 +336,7 @@ ul.skills {
     padding-top: 2vw;
     padding-bottom: 2vw;
     width: 100%;
-    font-weight: bold;
-    font-size: 3vw;
+    font: 3vw eigerdalsheavy;
     background-color: floralwhite;
     border-bottom: 1vh solid #01d6e9;
 }
@@ -373,7 +376,7 @@ ul.skills {
 }
 
 .title {
-    font-weight: bold;
+    font-family: eigerdalsheavy;
     color: #01d6e9;
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -616,71 +619,74 @@ ul.skills {
 /*=================================Media Queries=================================*/
 
 @media (max-width:681px) {
-    .header {
-        font-size: 2.5vh;
-        height: 5vh;
+    .articletext {
+        max-width: 100%;
+        padding: 0;
     }
-
-    .nav a {
-        padding-top: 0.5vh;
-        padding-left: 5vw;
-        padding-right: 5vw;
+    
+    body {
+        margin-bottom: 15vh;
     }
-
-    .introPicture {
-        height: 50vw;
-        background-position: -15vw -20vh;
-        background-size: 175vw;
-    }
-
-    .sub {
+    
+    .button {
         font-size: 3vh;
+        padding: 3vw 5vw;
+    }
+    
+    .columnListing {
+        padding-left: 11vw;
     }
 
     .content {
         font-size: 2vh;
         margin-bottom: 20vh;
     }
-
-    .line {
-        border-top: 1.5vw solid #01d6e9;
-        width: 20vw;
-        margin-top: 5.5vh;
-        margin-left: -20vw;
-        margin-right: -20vw;
-    }
-
-    .SectionHeader {
-        font-size: 3vh;
-    }
-
-    strong {
-        font-size: 2vh;
-    }
-
-    .wutIdo {
-        margin-left: 4vw;
-    }
-
-    .columnListing {
-        padding-left: 2vw;
-        font-size: 1.5vh;
-    }
-
-    .button {
-        font-size: 3vh;
-        padding: 3vw 5vw;
-    }
-
+    
     .footer {
-        bottom: 5vh;
+        top: calc(100% - 21vh);
     }
 
     .footer-button {
+        float: right;
         font-size: 2vh;
         padding: 2vw 3vw;
+        border: 0.5vh solid #01d6e9;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+        border-right: none;
+    }
+    
+    .gamename {
+        font-size: 12vw;
+    }
+    
+    .header {
+        font-size: 2.5vh;
+        height: 5vh;
     }
 
+    .infos {
+        font-size: 5vw;
+    }
+    
+    .introPicture {
+        height: 50vw;
+        background-position: -15vw -20vh;
+        background-size: 175vw;
+    }
+    
+    li {
+        font-size: 5vw;
+    }
+    
+    .mail-creds {
+        line-height: 1vh;
+        padding: 1vw;
+        font-size: 1.5vh;
+        border: 5px solid #01d6e9;
+        border-radius: 10px;
+    }
+    
     .mail-text {
         width: 85vw;
         max-width: 90vw;
@@ -693,13 +699,61 @@ ul.skills {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
+    
+    .nav a {
+        padding-top: 0.5vh;
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
+    
+    p {
+        font-size: 5vw;
+    }
 
-    .mail-creds {
-        line-height: 1vh;
-        padding: 1vw;
-        font-size: 1.5vh;
-        border: 5px solid #01d6e9;
-        border-radius: 10px;
+    #S1 {
+        border-bottom: none;
+        border-right: 0.1vh solid #01d6e9;
+    }
+    
+    .ScrollContainer {
+        position: fixed;
+        top: calc(100% - 15vh);
+        left: 35vw;
+        height: 6.5vh;
+        width: 65vw;
+        z-index: 1;
+        border: 0.5vh solid #01d6e9;
+        border-right: none;
+        border-top-left-radius: 20px;
+        border-bottom-left-radius: 20px;
+        background-color: floralwhite;
+    }
+    
+    .Scroll {
+        font: 4vw eigerdalsheavy;
+        border: none;
+        background-color: transparent;
+        color: #01d6e9;
+        display: inline;
+        cursor: pointer;
+        margin: auto;
+        padding: 2vh;
+    }
+    
+    .SectionHeader {
+        font-size: 3vh;
+    }
+    
+    .slider {
+        margin: auto;
+    }
+    
+    strong {
+        font-size: 4vw;
+    }
+    
+    .sub {
+        font-size: 3vh;
     }
 
     .submit {
@@ -707,6 +761,19 @@ ul.skills {
         border-radius: 5vw;
         font-size: 3vh;
         padding: 1vw 3vw;
+    }
+    
+    ul {
+        overflow: visible;
+        margin-inline-start: 3vw;
+    }
+    
+    .wutIdo {
+        padding-top: 3vh;
+        margin: 0;
+    }
+    .wutIdo li {
+        font-size: 3.5vw;
     }
 }
 
