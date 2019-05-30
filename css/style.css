@@ -300,6 +300,7 @@ ul.skills {
 
 #S1 {
     border-bottom: 1px solid #01d6e9;
+    height: 12vw;
 }
 
 .ScrollContainer {
@@ -643,7 +644,7 @@ ul.skills {
     }
     
     .footer {
-        top: calc(100% - 21vh);
+        top: calc(100% - 21.5vh);
     }
 
     .footer-button {
