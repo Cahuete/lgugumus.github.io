@@ -43,11 +43,11 @@ button:focus {
 }
 
 .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     text-align: center;
     width: 100%;
-    height: 9%;
+    height: 10%;
     margin-bottom: 2%;
 }
 
@@ -159,8 +159,7 @@ ul.skills {
 }
 
 .centered {
-    margin-left: 30vh;
-    margin-right: 30vh;
+    margin: auto;
     display: flex;
     position: relative;
 }
@@ -329,7 +328,6 @@ ul.skills {
 }
 
 .SectionHeader {
-    text-decoration: underline;
     text-align: center;
     font: 3vw eigerdalsheavy;
     padding-top: 2vw;
@@ -338,6 +336,7 @@ ul.skills {
     background-color: floralwhite;
     border-bottom: 1vh solid #01d6e9;
 }
+
 .SectionHeader.BT {
     border-top: 1vh solid #01d6e9;
 }
@@ -621,43 +620,31 @@ ul.skills {
         max-width: 100%;
         padding: 0;
     }
-    
-    body {
-        margin-bottom: 15vh;
-    }
-    
+
     .button {
         font-size: 3vh;
         padding: 3vw 5vw;
     }
-    
+
     .columnListing {
         padding-left: 11vw;
     }
 
     .content {
         font-size: 2vh;
-        margin-bottom: 20vh;
-    }
-    
-    .footer {
-        top: calc(100% - 15vh);
+        margin-bottom: 10vh;
     }
 
     .footer-button {
-        float: right;
         font-size: 2vh;
         padding: 2vw 3vw;
         border: 0.5vh solid #01d6e9;
-        border-top-right-radius: 0;
-        border-bottom-right-radius: 0;
-        border-right: none;
     }
-    
+
     .gamename {
-        font-size: 12vw;
+        font-size: 10vw;
     }
-    
+
     .header {
         font-size: 2.5vh;
         height: 5vh;
@@ -666,17 +653,19 @@ ul.skills {
     .infos {
         font-size: 5vw;
     }
-    
+
     .introPicture {
-        height: 50vw;
-        background-position: -15vw -20vh;
-        background-size: 175vw;
+        height: 70vw;
+        width: 70vw;
+        background-position: 0;
+        background-size: cover;
+        border-radius: 50%;
     }
-    
+
     li {
         font-size: 5vw;
     }
-    
+
     .mail-creds {
         line-height: 1vh;
         padding: 1vw;
@@ -684,7 +673,7 @@ ul.skills {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
-    
+
     .mail-text {
         width: 85vw;
         max-width: 90vw;
@@ -697,13 +686,13 @@ ul.skills {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
-    
+
     .nav a {
         padding-top: 0.5vh;
         padding-left: 5vw;
         padding-right: 5vw;
     }
-    
+
     p {
         font-size: 5vw;
     }
@@ -713,7 +702,7 @@ ul.skills {
         border-right: 0.1vh solid #01d6e9;
         height: 12vw;
     }
-    
+
     .ScrollContainer {
         position: fixed;
         top: calc(100% - 15vh);
@@ -727,7 +716,7 @@ ul.skills {
         border-bottom-left-radius: 20px;
         background-color: floralwhite;
     }
-    
+
     .Scroll {
         font: 4vw eigerdalsheavy;
         border: none;
@@ -738,19 +727,19 @@ ul.skills {
         margin: auto;
         padding: 2vh;
     }
-    
+
     .SectionHeader {
         font-size: 3vh;
     }
-    
+
     .slider {
         margin: auto;
     }
-    
+
     strong {
         font-size: 4vw;
     }
-    
+
     .sub {
         font-size: 3vh;
     }
@@ -761,58 +750,72 @@ ul.skills {
         font-size: 3vh;
         padding: 1vw 3vw;
     }
-    
+
     ul {
         overflow: visible;
         margin-inline-start: 3vw;
     }
-    
+
     .wutIdo {
         padding-top: 3vh;
         margin: 0;
     }
+
     .wutIdo li {
         font-size: 3.5vw;
     }
 }
 
 @media (min-width:681px) and (max-width:1080px) {
-    
+
+    .articletext {
+        max-width: 100%;
+        margin: 0;
+        padding: 0;
+        font-size: 3vw;
+    }
+
     .button {
-        font-size: 2vw;
+        font-size: 5vw;
         padding: 2vw 3vw;
         border-radius: 5vw;
     }
-    
+
     .columnListing {
-        padding-left: 3vw;
+        /*        padding-left: 3vw;*/
         font-size: 2vw;
     }
-    
+
     .content {
         font-size: 4vw;
-        margin-bottom: 20vh;
+        margin-bottom: 5vh;
     }
-    
+
     .footer {
-        bottom: 1vh;
+        margin-bottom: 5vh;
     }
 
     .footer-button {
-        font-size: 1.5vw;
+        font-size: 3vw;
         padding: 1.5vw 2vw;
         border-radius: 5vw;
     }
-    
+
+    .gamename {
+        font-size: 6vw;
+    }
+
     .header {
         font-size: 4vw;
         height: 6vh;
     }
-    
+
     .introPicture {
-        height: 30vh;
-        background-position: -10vw -30vh;
-        background-size: 150vw;
+        height: 70vw;
+        width: 70vw;
+        background-position: 0;
+        background-size: cover;
+        border-radius: 50%;
     }
 
     .mail-text {
@@ -835,26 +838,38 @@ ul.skills {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
-    
+
     .nav a {
         padding-top: 0vh;
         padding-left: 8vw;
         padding-right: 8vw;
     }
-   
+
+    .picture {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .SectionHeader {
         width: 100%;
         font-size: 5vw;
     }
 
+    #slider {
+        margin: auto;
+        margin: auto;
+    }
+
     strong {
         font-size: 3vw;
+        text-align: center;
     }
-    
+
     .sub {
         font-size: 5vw;
     }
-    
+
     .submit {
         border: 0.5vw solid #01d6e9;
         border-radius: 5vw;
@@ -862,64 +877,75 @@ ul.skills {
         padding: 1vw 3vw;
     }
 
+    ul {
+        overflow: visible;
+        margin-inline-start: 3vw;
+    }
+
     .wutIdo {
         margin-left: auto;
+    }
+
+    .wutIdo li {
+        font-size: 3vw;
     }
 }
 
 @media (min-width:729px) and (max-height:500px) {
-    
+
     h2 {
         font-size: 3vw;
     }
-    
+
     h3 {
         font-size: 2vw;
     }
-    
+
     .header {
         font-size: 5vh;
         height: 8vh;
     }
-    
+
     .gamename {
         text-align: left;
     }
-    
+
     .introPicture {
         height: 35vh;
-        background-position: 0vw -60vh;
+        width: 35vh;
+        background-position: 0;
         background-size: cover;
+        border-radius: 50%;
     }
-    
+
     .nav a {
         padding-top: 0vh;
         padding-left: 10vw;
         padding-right: 10vw;
     }
-    
+
     .preview {
-        display: flex;   
+        display: flex;
     }
 }
 
 @media (min-width:1080px) {
-    
+
     .button {
         font-size: 4vh;
         padding: 1vw 2vw;
         border-radius: 5vw;
     }
-    
+
     .columnListing {
         padding-left: 4vw;
         font-size: 3vh;
     }
-    
+
     .content {
         font-size: 5vh;
-        margin-bottom: 40vh;
-        
+        margin-bottom: 15vh;
+
     }
 
     .footer-button {
@@ -927,16 +953,16 @@ ul.skills {
         padding: 1vw 2vw;
         border-radius: 5vw;
     }
-    
+
     .gamename {
         text-align: left;
     }
-    
+
     .header {
         font-size: 4vh;
         height: 7vh;
     }
-    
+
     .introPicture {
         height: 35vh;
         width: 35vh;
@@ -944,7 +970,7 @@ ul.skills {
         background-size: cover;
         border-radius: 50%;
     }
-    
+
     .introtext {
         margin-right: 15vw;
         margin-left: 15vw;
@@ -972,22 +998,22 @@ ul.skills {
         border: 5px solid #01d6e9;
         border-radius: 10px;
     }
-    
+
     .nav a {
         padding-top: 0vh;
-        padding-left: 12vw;
-        padding-right: 12vw;
+        padding-left: 8vw;
+        padding-right: 8vw;
     }
-    
+
     .preview {
         display: flex;
     }
-    
+
     .SectionHeader {
         width: 100%;
         font-size: 8vh;
     }
-    
+
     .slider {
         margin: none;
     }
@@ -999,7 +1025,7 @@ ul.skills {
     .sub {
         font-size: 7vh;
     }
-    
+
     .submit {
         border: 0.5vw solid #01d6e9;
         border-radius: 5vw;
